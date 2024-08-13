@@ -105,7 +105,7 @@ function ConvertHandler() {
 
           case 'km':
           case 'KM':
-            result = 'kilometres'
+            result = 'kilometers'
             break;
                                                 
     }
