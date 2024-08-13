@@ -66,12 +66,12 @@ suite('Unit Tests', function(){
                     'km',
                     'lbs',
                     'kg',
-                    'GAL',
+                    'gal',
                     'L',
-                    'MI',
-                    'KM',
-                    'LBS',
-                    'KG'
+                    'mi',
+                    'km',
+                    'lbs',
+                    'kg'
                 ];
 
             input.forEach((ele, i) => {

@@ -38,6 +38,21 @@ function ConvertHandler() {
     if(result === 'l')
       result = 'L';
 
+    if(result === 'GAL')
+      result = 'gal';
+
+    if(result === 'MI')
+      result = 'mi';
+
+    if(result === 'KM')
+      result = 'km';
+
+    if(result === 'LBS')
+      result = 'lbs';
+
+    if(result === 'KG')
+      result = 'kg';
+
     return result;
   };
   
