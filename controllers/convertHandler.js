@@ -15,7 +15,7 @@ function ConvertHandler() {
       if(values.length != 2)
         return 'invalid number';
 
-      result = parseFloat(parseFloat(values[0])/parseFloat(values[1])).toFixed(5)
+      result = parseFloat((parseFloat(values[0]))/(parseFloat(values[1]))).toFixed(5)
     }
 
     if(isNaN(result))
@@ -142,7 +142,7 @@ function ConvertHandler() {
   
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
     let result;
-    result = initNum + ' ' + this.spellOutUnit(initUnit) + ' converts to ' + returnNum + ' ' + this.spellOutUnit(returnUnit);
+    result = initNum + ' ' + this.spellOutUnit(initUnit) + ' converts to ' +  returnNum+ ' ' + this.spellOutUnit(returnUnit);
     return result;
   };
   
