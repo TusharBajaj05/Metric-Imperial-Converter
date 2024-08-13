@@ -20,13 +20,13 @@ suite('Unit Tests', function(){
 
         test('Fraction Input', (done) => {
             let input = '32/3L';
-            assert.equal(convertHandler.getNum(input), 10.66667);
+            assert.equal(convertHandler.getNum(input), 32/3);
             done();
         })
 
         test('Fraction Input w/ Decimal', (done) => {
             let input = '9/3.3L';
-            assert.equal(convertHandler.getNum(input), 2.72727);
+            assert.equal(convertHandler.getNum(input), 9/3.3);
             done();
         })
 

@@ -1,10 +1,12 @@
 let regex = /[a-z]+|[^a-z]+/gi 
-
 function ConvertHandler() {
   
   this.getNum = function(input) {
     let result;
     result = input.match(regex)[0];
+    // let number = input.match(/[.\d\/]+/g) || ['1'];
+    // let r = number[0];
+
 
     let numRegex = /\d/
     if(numRegex.test(result) === false)
@@ -15,13 +17,16 @@ function ConvertHandler() {
       if(values.length != 2)
         return 'invalid number';
 
-      result = parseFloat((parseFloat(values[0]))/(parseFloat(values[1]))).toFixed(5)
+      result = (parseFloat(values[0]))/(parseFloat(values[1])).toFixed(5)
     }
+
 
     if(isNaN(result))
       return 'invalid number';
 
-    return result;
+    //console.log(result + ' : ' + input);
+
+    return parseFloat(result);
   };
   
   this.getUnit = function(input) {
