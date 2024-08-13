@@ -35,6 +35,9 @@ function ConvertHandler() {
     if(!validUnits.includes(result))
       return 'invalid unit';
 
+    if(result === 'l')
+      result = 'L';
+
     return result;
   };
   
